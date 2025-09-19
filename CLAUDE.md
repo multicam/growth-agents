@@ -41,7 +41,10 @@ Optimization and analytics prompts including:
 ## File Structure
 
 - `prompt_lib/index.md` - Master index of all prompts organized by framework stage
-- `prompt_lib/[1-4]__[Stage]/[Prompt Name].md` - Individual prompt files
+- `prompt_lib/[1-4]__[Stage]/[Prompt Name].md` - Individual prompt files (99 total prompts)
+- `dev/` - Development resources and analysis
+  - `marketing-prompts-data-analysis.md` - Comprehensive data structure analysis
+  - `templates/` - Input data collection templates for prompt usage
 - Each prompt file contains structured templates with:
   - ROLE definition
   - CONTEXT explanation
@@ -57,6 +60,8 @@ Since this is a documentation/prompt repository, common tasks involve:
 - Updating the `prompt_lib/index.md` file when adding new prompts
 - Following the established naming convention: `[Number]__[Stage]/[Descriptive Name].md`
 - Maintaining consistent prompt structure with ROLE, CONTEXT, TASK, and business context sections
+- Using data collection templates in `dev/templates/` to gather input data for prompts
+- Updating templates with current business data and performance metrics
 
 ## Prompt Structure Standards
 
@@ -67,4 +72,30 @@ All prompts follow a consistent structure:
 - **Business Context**: Variables for customization
 - Implementation sections with specific frameworks and methodologies
 
-This repository serves as a comprehensive marketing strategy prompt library following HubSpot's Loop Marketing methodology.
+## Data Collection Templates
+
+The `dev/templates/` directory contains structured templates for collecting input data required by the marketing prompts:
+
+### Core Data Templates
+1. **01-customer-market-data.md** - Customer demographics, behavior, and market intelligence
+2. **02-business-context.md** - Company information, strategy, and organizational context
+3. **03-performance-data.md** - Campaign metrics, ROI, and performance analytics
+4. **04-technology-capabilities.md** - Marketing technology stack and capabilities assessment
+
+### Framework Stage Templates
+5. **05-express-stage-data.md** - Brand foundation, messaging, and positioning data
+6. **06-tailor-stage-data.md** - Personalization data and customer intelligence
+7. **07-amplify-stage-data.md** - Channel expansion and distribution strategies
+8. **08-evolve-stage-data.md** - Optimization, testing, and analytics data
+
+### Template Usage
+- Start with core templates (01-04) for foundational data needed across all stages
+- Complete stage-specific templates (05-08) based on marketing priorities
+- Keep templates updated with current performance data and customer insights
+- Use completed template sections as structured input when working with marketing prompts
+
+## Analysis Resources
+
+- **dev/marketing-prompts-data-analysis.md** - Comprehensive analysis of data structure patterns across all 99 prompts, including required input categories, collection methods, and implementation dependencies
+
+This repository serves as a comprehensive marketing strategy prompt library following HubSpot's Loop Marketing methodology, with supporting data collection infrastructure for systematic implementation.
